@@ -1,0 +1,99 @@
+// project card
+.v4-card {
+	border-radius: 10px;
+	display: grid;
+	place-content: center;
+
+	.card-content {
+		margin: 20px;
+		// height: 150px;
+		height: 20vw;
+		min-height: 150px;
+		width: 36vw;
+		min-width: 270px;
+		overflow: hidden;
+		background-image: var(--backgroundImage);
+		background-size: cover;
+		background-repeat: no-repeat;
+		@media (min-width: 1080px) {
+			margin: 30px;
+		}
+	}
+
+	.info {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: #e4ebf5 !important;
+		transform: translateY(100%) translateY(-25%);
+		transition: transform 0.5s ease-out;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.info:before {
+		z-index: -1;
+		display: block;
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		background-image: var(--backgroundImage);
+		filter: blur(7px);
+		background-size: cover;
+		opacity: 0.25;
+		transform: translateY(-100%) translateY(25%);
+		transition: transform 0.5s ease-out;
+	}
+
+	.card-content:hover .info,
+	.card-content:hover .info:before {
+		transform: translateY(0) translateZ(0);
+	}
+
+	.title {
+		margin-top: 5px;
+		font-size: 1.2rem;
+		line-height: 1;
+		font-family: 'Gone';
+		letter-spacing: 5px;
+		@media screen and (min-width: 1080px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	.v4-description {
+		text-align: center;
+		padding: 0 0.5em;
+		font-size: 0.8rem;
+		font-family: 'Iceland';
+		// line-height: 1.5;
+		color: rgb(14, 14, 122);
+		@media screen and (min-width: 1080px) {
+			font-size: 1rem;
+			padding: 0 1.1em;
+		}
+	}
+	.v4-stack {
+		font-size: 0.9rem;
+		color: blue;
+		// text-shadow: 0px 0px 2px black;
+		font-family: 'Quantum';
+		@media screen and (min-width: 1080px) {
+			font-size: 1rem;
+		}
+	}
+	.v4-links {
+		font-size: 0.7rem;
+
+		#source {
+			svg {
+				font-size: 0.9rem !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+// portfolio styles for v 3.0
+@import './v3/_app.scss';
+@import './v3/_footer.scss';
+@import './v3/_animation';
+@import './v3/_logo.scss';
+@import './v3/_waves.scss';
+@import './v3/_switch.scss';
+@import './v3/theme/_dark.scss';
+@import './v3/theme/_light.scss';
+@import './v3/_projects.scss';
+@import './v3/about.scss';
+
+// portfolio styles for v 4.0
+@import './v4/neumorphism';
+@import './v4/v4-navbar.scss';
+@import './v4/intro.scss';
+@import './v4/v4-about.scss';
+@import './v4/v4-projects.scss';
+@import './v4/v4-contact.scss';
+@import './v4/v4-slider.scss';
+
+// v5
+@import '../components/v5/Projects/Coverflow/coverflow';

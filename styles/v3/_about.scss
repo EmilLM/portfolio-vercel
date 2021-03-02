@@ -1,0 +1,160 @@
+.about-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.about-code {
+		margin: 30px 0;
+		// margin-left: 50px;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		text-align: left;
+		font-size: 1.2em;
+		color: rgb(5, 228, 105);
+		font-weight: 500;
+		font-family: 'Iceland';
+		line-height: 1.2em;
+		p {
+			margin: 0;
+			span {
+				color: navy;
+				font-weight: 600;
+			}
+		}
+	}
+	.btn-download {
+		color: navy;
+		margin: 5px 0;
+		padding: 9px 13px;
+		border-radius: 0.25em;
+		font-size: 1em;
+		font-weight: 700;
+		background: rgba(18, 72, 92, 0.38);
+		border: none;
+		font-family: 'Iceland';
+		text-decoration: none;
+		cursor: pointer;
+		&:hover {
+			color: white;
+			background: rgba(18, 72, 92, 1);
+		}
+		svg {
+			margin-right: 10px;
+		}
+	}
+
+	.about-info {
+		margin-top: 20px;
+		text-align: center;
+		font-size: 0.9em;
+		background-color: rgb(18, 72, 92, 0.38);
+		padding: 25px 15px;
+		color: white;
+		border-radius: 10px;
+		font-family: 'RussoOne';
+		max-width: 500px;
+		@media screen and (min-width: 960px) {
+			max-width: 700px;
+		}
+		span {
+			color: navy;
+			a {
+				color: navy;
+				text-decoration: none;
+				&:hover {
+					color: black;
+				}
+			}
+		}
+	}
+	h3 {
+		color: navy;
+		font-family: 'Quantum';
+		font-size: 1.4em;
+	}
+	.skills-container {
+		margin-top: 20px;
+		max-width: 350px;
+		display: grid;
+		gap: 10px;
+		justify-content: space-evenly;
+		align-items: center;
+		grid-template-columns: repeat(1, minmax(80px, 170px));
+
+		@media (min-width: 300px) {
+			grid-template-columns: repeat(2, minmax(80px, 200px));
+			max-width: 450px;
+			gap: 15px;
+		}
+		@media (min-width: 960px) {
+			width: 100%;
+			max-width: 850px;
+			gap: 20px;
+			grid-template-columns: repeat(4, minmax(130px, 200px));
+		}
+	}
+
+	.skills-card {
+		position: relative;
+		font-size: 1.3rem;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: rgb(18, 72, 92, 0.38);
+		border-radius: 0.25em;
+		transition: transform 0.5s ease !important;
+		&:hover {
+			transform: scale(1.08);
+		}
+		@media (min-width: 300px) {
+			height: 180px;
+			font-size: 1.15rem;
+		}
+		@media (min-width: 420px) {
+			height: 200px;
+			// font-size: 1.2rem;
+		}
+		@media (min-width: 500px) {
+			height: 230px;
+		}
+		@media (min-width: 850px) {
+			height: 250px;
+			font-size: 1rem;
+		}
+
+		svg {
+			color: red;
+		}
+		strong {
+			color: white;
+			text-transform: uppercase;
+			font-family: 'Quantum';
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			font-family: 'Iceland';
+		}
+	}
+	.skills-card::before {
+		position: absolute;
+		content: '';
+		width: 0%;
+		height: 3px;
+		left: 0;
+		bottom: 0;
+		background: red;
+	}
+	.skills-card:hover {
+		background-color: rgb(18, 72, 92, 1);
+	}
+	.skills-card:hover::before {
+		transition: 0.6s;
+		width: 100%;
+	}
+}

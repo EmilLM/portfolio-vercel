@@ -1,7 +1,33 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
+import "../styles/main.scss"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import {useState, useEffect} from 'react';
+// required import to prevent prerendered icon before css loads
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import Head from "next/head"
+import MiscContext from "../components/MiscContext.jsx";
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/effect-coverflow/effect-coverflow.scss';
+
+function MyApp({ Component, pageProps}) {
+  
+  
+  const [animate, setAnimate] = useState(false);
+  const [theme, setTheme] = useState(false);
+ 
+  return (
+    <>
+      <Head>
+        <meta  name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+      </Head>
+      <MiscContext.Provider value={{animate, setAnimate, theme, setTheme}}>
+        <Component {...pageProps} />
+      </MiscContext.Provider>
+    </>
+  ) 
 }
 
 export default MyApp

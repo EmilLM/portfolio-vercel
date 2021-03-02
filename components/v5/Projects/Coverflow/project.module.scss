@@ -1,0 +1,31 @@
+.content {
+	position: absolute;
+	width: 80%;
+	bottom: 5%;
+	margin-left: 15px;
+	text-align: center;
+	color: black;
+	font-family: 'Iceland';
+	background: rgba(210, 210, 255, 0.295);
+	border-radius: 15px;
+	padding: 1em 0;
+	@media screen and (min-width: 580px) {
+		width: 250px;
+	}
+
+	h3 {
+		font-size: 2rem;
+		color: white;
+		text-shadow: 0 0 5px blue;
+	}
+	p {
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 1em 0;
+	}
+	a {
+		margin-right: 20px;
+		font-size: 1.1rem;
+		color: navy;
+	}
+}

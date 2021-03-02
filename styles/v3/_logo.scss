@@ -1,0 +1,107 @@
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-top: 5px solid navy;
+  border-left: 5px solid navy;
+  border-right: 5px solid lightblue;
+  border-bottom: 5px solid lightblue;
+  box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @media (min-width: 768px) {
+    width: 150px;
+    height: 150px;
+    border-top: 8px solid navy;
+    border-left: 8px solid navy;
+    border-right: 8px solid lightblue;
+    border-bottom: 8px solid lightblue;
+  }
+
+  
+  .logo-text {
+    letter-spacing: 20px;
+    font-size: 25px;
+    font-family: "Quantum", sans-serif;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      font-size: 50px;
+       margin-left: 5px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// tooltip
+.bottom {
+  // tooltip container 
+  font-family: "RussoOne";
+  transform: rotate(-45deg);
+  min-width: 100px; 
+  font-size:12px;
+  bottom: -25px;
+  left: 40%;
+  // transform:translate(-50%, 0);
+  padding: 7px 12px;
+  color:#99CCFF;
+  background-color:#000000;
+  border-radius:8px;
+  position:absolute;
+  z-index:99;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  visibility:hidden; opacity:0; transition:opacity 0.8s;
+  text-align: center;
+  @media (min-width: 768px) {
+    min-width: 150px;
+    font-size:14px;
+  }
+}
+
+.tooltip:hover .bottom {
+    visibility:visible; 
+    opacity:1;
+}
+
+.tooltip .bottom i {
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.tooltip .bottom i::after {
+  
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:#000000;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+// &::before {
+//     position: absolute;
+//     content: '';
+//     width: 55%;
+//     height: 114%;
+//     top: -8px;
+//     right: -8px;
+//     border-bottom: 8px solid lightblue;
+//     border-top: 8px solid lightblue;
+//     border-right: 8px solid lightblue;
+//     @media (min-width: 992px) {
+//       height: 111%;
+//     }
+//   }

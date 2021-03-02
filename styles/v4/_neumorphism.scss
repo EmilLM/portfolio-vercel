@@ -1,0 +1,213 @@
+
+// divider style
+._1RYKi {
+    border-radius: 0px !important;
+}
+// card style override
+// ._28vIk {
+//     // width: 100% !important;
+//     // border-radius: 0px !important;
+// }
+
+// on scroll slider animation container width fix
+.v4-projects {
+    .css-1jwldo8  {
+        width: 100%;
+        
+    }
+}
+
+
+// button container class
+._cL4RU{
+    transition: box-shadow 0s ease !important; 
+    // padding: 0 !important;
+    // height: 0px !important;
+    &:active {
+        color: black !important; 
+                
+    }
+    // button inside container
+    ._3lLt8 {
+        text-transform: none !important;
+        // font-size: rem !important;
+        // padding: 0.5em 1em !important;     
+    } 
+}
+
+// emboss style 
+.dark-emboss {
+    background: #292E35 !important;
+    box-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a;
+    &:hover {
+        box-shadow: inset -3px -3px 5px #313740,
+            inset 3px 3px 5px#21252a !important;
+    }
+}
+.light-emboss {
+    background: #E4EBF5 !important;
+    box-shadow:-3px -3px 5px #fff, 3px 3px 5px #bec8e4;
+    &:hover {
+        box-shadow: inset -3px -3px 5px #fff, 
+            inset 3px 3px 5px #bec8e4 !important
+    }
+}
+// heading class styles 
+
+.dark-h-emboss {
+    color: #292E35 !important;
+    text-shadow:-3px -3px 5px #313740 , 3px 3px 5px#21252a;
+
+    
+}
+.light-h-emboss {
+    color: #E4EBF5 !important;
+    text-shadow:-3px -3px 5px #fff, 3px 3px 5px #bec8e4 ;
+}
+@mixin heading-engrave-styles {
+    color: transparent !important; 
+    text-transform: uppercase;
+    background-clip: text;
+    font-family: "Anurati";
+    letter-spacing: 5px;
+}
+.dark-h-e {
+    background-color: #080611;
+    text-shadow: 2px 2px 5px rgba(70, 14, 143, 0.7);
+    @include heading-engrave-styles;
+
+}
+.light-h-e {
+    background-color: #26195e !important;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+    @include heading-engrave-styles;
+
+}
+
+
+.v4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    border-radius: 0px !important;
+
+}
+// styles for section card-containers
+// .card-container-up {
+//     width: 90% !important;
+//     box-shadow: 7px 7px 10px #bec8e4, -7px -7px 10px #ffffff;
+//     border-radius: 10px;
+// }
+// .card-container-down {
+//     width: 90%;
+//     box-shadow: inset 7px 7px 10px #bec8e4, inset -7px -7px 10px #ffffff;
+//     border-radius: 10px; 
+// }
+.v4-divider{
+    width: 100%;
+}
+// engrave on hover
+.dark-engrave {
+    &:hover {
+        border-radius: 5px;
+        box-shadow: inset -3px -3px 5px #313740,
+            inset 3px 3px 5px#21252a !important; 
+    }
+    
+}
+.light-engrave {
+    &:hover {
+        border-radius: 5px;
+        box-shadow: inset -3px -3px 5px #fff, 
+            inset 3px 3px 5px #bec8e4 !important;
+    }
+}
+// standard engrave
+.dark-active {
+    box-shadow: inset -3px -3px 5px #313740,
+            inset 3px 3px 5px#21252a !important;
+}
+.light-active {
+    box-shadow: inset -3px -3px 5px #fff, 
+            inset 3px 3px 5px #bec8e4 !important
+}
+// deep engrave 
+.dark-deep-engrave {
+    box-shadow: inset -10px -10px 15px #313740, 
+            inset 10px 10px 15px #21252a !important;
+}
+.light-deep-engrave {
+    box-shadow: inset -10px -10px 15px #fff, 
+                inset 10px 10px 15px #bec8e4 !important;
+}
+// Form styles
+.dark-form {
+    background-color: #292E35;
+    box-shadow: inset -3px -3px 5px #313740,
+             inset 3px 3px 5px#21252a !important;
+    &:focus {
+        box-shadow: inset -2px -2px 3px #313740,
+                inset 2px 2px 3px#21252a !important;
+    }
+}
+.light-form {
+    background: #E4EBF5;
+    box-shadow: inset -3px -3px 5px #fff, 
+                inset 3px 3px 5px #bec8e4 !important;
+    &:focus {
+        box-shadow: inset -2px -2px 3px #fff,
+                inset 2px 2px 3px #bec8e4 !important;
+    }
+                
+}
+
+// button styles
+.btn-dark {
+    color: blue !important;
+    background-color: #292E35 !important;
+    box-shadow: -3px -3px 5px #313740,
+                3px 2px 5px#21252a !important;
+    &:hover {
+        box-shadow: -2px -2px 2px #313740,
+                2px 2px 2px#21252a !important;
+    }
+    &:focus {
+        box-shadow: inset -3px -3px 5px #313740,
+                inset 3px 3px 5px#21252a !important;
+    }
+
+}
+
+// button styles
+.v4-contact {
+    .btn-light {
+    background: #E4EBF5 !important;
+    color: blue !important;
+    box-shadow:  -3px -3px 5px #fff, 
+                 3px 3px 5px #bec8e4 !important;
+        &:hover {
+            box-shadow:  -2px -2px 2px #fff, 
+                    2px 2px 2px #bec8e4 !important;
+        }
+        &:focus {
+            box-shadow: inset -3px -3px 5px #fff, 
+                    inset 3px 3px 5px #bec8e4 !important;
+        }
+        &:disabled {
+            color: gray !important;
+            box-shadow:  -3px -3px 5px #fff, 
+                    3px 3px 5px #bec8e4 !important;
+        }
+
+    }
+}
+
+// slider arrows gradient
+.prev-slide-dark {
+    // background: linear-gradient(to left, transparent,  #292e354b, #292E35) !important;
+    background: linear-gradient(90deg, #292E35 0%,#292E35 25%, transparent 100%) !important;  
+}
+.next-slide-dark {
+    background: linear-gradient(-90deg, #292E35 0%,#292E35 25%, transparent 100%) !important;
+}

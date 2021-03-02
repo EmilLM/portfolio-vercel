@@ -1,0 +1,40 @@
+.title {
+	background: url('../../../public/assets/h_bg/ice.webp') no-repeat center;
+	background-size: contain;
+	z-index: 9;
+	width: 100%;
+	min-height: 100px;
+
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 0.2em 0 0.4em 0;
+	text-transform: uppercase;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.26);
+	word-wrap: break-word;
+	font-family: 'Quantum';
+	letter-spacing: 15px;
+	display: grid;
+	place-content: center;
+	@media screen and (min-width: 470px) {
+		font-size: 3.3rem;
+	}
+}
+.container {
+	height: 70vh;
+	background: linear-gradient(180deg, #fff 10%, rgb(213, 245, 253) 50%);
+	// clip-path: polygon(
+	// 	0 0,
+	// 	100% 0,
+	// 	100% 100%,
+	// 	86% 93%,
+	// 	62% 97%,
+	// 	44% 99%,
+	// 	16% 95%,
+	// 	0 100%
+	// );
+	@media screen and (min-width: 600px) {
+		height: 100vh;
+	}
+}

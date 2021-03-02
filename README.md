@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+ <a href="https://imgbb.com/"><img width=100px height=100px src="https://i.ibb.co/31BR9gb/logo.png" alt="logo"/></a>
+</p>
 
-## Getting Started
+<h1 align="center">Apps Portfolio</h1>
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> Portfolio website for all my apps
+    <br> 
+</p>
+
+<h2 align="center"><a href="https://luchianemil.com">Live demo</a></h2>
+
+## 🧐 About <a name = "about"></a>
+
+The project's purpose is to display all my major live projects alongside a bit of personal and professional info about myself and ways to contact me.
+
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [React](https://reactjs.org) - UI Framework
+- [Next.js](https://nextjs.org) - Server-side Development Framework
+- [Scss](https://sass-lang.com) - Styles library
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+Other dependencies: 
+
+- [Font Awesome](https://fontawesome.com) - Icon library
+- [EmailJs](https://www.emailjs.com) - Email sender
+- [Swiper JS](https://swiperjs.com) - Slider library
+- [React Scrollspy](https://makotot.github.io/react-scrollspy/) - Scrollspy navigation library
+- [React Lazyload](https://www.npmjs.com/package/react-lazy-load) - Lazyload images library
+- [React Ripples](https://rwu823.github.io/react-ripples/) - Ripples for buttons library
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+### Prerequisites
+
+
+```
+Install Node.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installing
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+Clone https://github.com/EmilLM/App-portfolio-nextjs.git,
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+run npm install
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+run npm run dev -- for development build
+run npm run build -- for production build
+```
 
-## Learn More
+## 🎈 Usage <a name="usage"></a>
 
-To learn more about Next.js, take a look at the following resources:
+Replace data in projectsData.js found in the root folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment <a name = "deployment"></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+Run npm run export to create folder used for deployment.
+```
+## ✍️ Authors <a name = "authors"></a>
 
-## Deploy on Vercel
+- [@EmilLM](https://github.com/EmilLM) 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Hat tip to anyone whose resources were used
+- [FlatIcon](hhttps://www.flaticon.com) - Icon library
+

@@ -1,0 +1,369 @@
+.title {
+	width: 100%;
+	background: url('../../../public/assets/h_bg/droplets.webp') no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	z-index: 9;
+	text-align: center;
+	font-size: 3.3rem;
+	padding: 0.2em 0 0.4em 0;
+	text-transform: uppercase;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.123);
+	word-wrap: break-word;
+	font-family: 'Quantum';
+	letter-spacing: 15px;
+	&:before {
+		position: absolute;
+		z-index: -10;
+		content: '';
+		width: 17rem;
+		height: 17rem;
+		transform: rotate(45deg);
+		top: 35%;
+		left: 10%;
+		background: linear-gradient(to top, white, rgb(0, 26, 255));
+		clip-path: polygon(
+			53% 0,
+			0% 100%,
+			35% 74%,
+			55% 31%,
+			55% 65%,
+			77% 89%,
+			42% 100%,
+			100% 100%
+		);
+	}
+}
+
+.container {
+	background: linear-gradient(to bottom, #00a6ff, #f2fcfe);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+	position: relative;
+	z-index: 1;
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 100%,
+		79% 97%,
+		56% 100%,
+		37% 98%,
+		16% 100%,
+		0 96%
+	);
+	&:after {
+		position: absolute;
+		content: '';
+		width: 300px;
+		height: 300px;
+		clip-path: polygon(
+			0% 0%,
+			0% 100%,
+			25% 100%,
+			25% 25%,
+			75% 25%,
+			75% 75%,
+			25% 75%,
+			25% 100%,
+			100% 100%,
+			100% 0%
+		);
+		top: 30%;
+		right: 5%;
+		z-index: -1;
+		// background: rgba(131, 128, 153, 0.25);
+		border-radius: 5px;
+		background: linear-gradient(
+			to right,
+			rgb(11, 11, 230),
+			rgba(28, 28, 194, 0)
+		);
+
+		// backdrop-filter: blur(10px);
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		top: 18%;
+		width: 71%;
+		min-width: 360px;
+		height: 61vh;
+		background: rgba(134, 121, 250, 0.342);
+		border: 1px solid rgba(255, 255, 255, 0.274);
+		backdrop-filter: blur(15px);
+		z-index: 1;
+		border-radius: 30px;
+		transform: rotate(2deg);
+		@media screen and (min-width: 500px) {
+			height: 81vh;
+			min-width: 490px;
+			top: 17%;
+		}
+	}
+}
+@mixin inner_card {
+	width: 500px;
+	height: 260px;
+	background: rgba(39, 33, 53, 0.25);
+	border: 1px solid rgba(255, 255, 255, 0.281);
+	padding: 1.2em 1.5em;
+	border-radius: 10px;
+	transform: rotateY(45deg) skewY(-15deg);
+	position: absolute;
+	content: '';
+	transition: 0.5s all ease-out;
+	user-select: none;
+}
+
+.content {
+	width: 70%;
+	height: 60vh;
+	min-width: 350px;
+	margin: 2em 0 3em 0;
+	border-radius: 30px;
+	background: rgba(93, 75, 250, 0.26);
+	border: 1px solid rgba(255, 255, 255, 0.253);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+	backdrop-filter: blur(15px) contrast(110%) brightness(110%);
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 10 !important;
+
+	@media screen and (min-width: 500px) {
+		min-width: 480px;
+		height: 80vh;
+	}
+	@media screen and (min-width: 1100px) {
+		perspective: 1000px;
+		transform-style: flat;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 1099px) {
+	.objective,
+	.studies,
+	.info {
+		height: 260px;
+		padding: 1.2em 1.5em;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		font-family: 'RussoOne';
+		color: #190d6e;
+
+		h5 {
+			display: none;
+		}
+		span {
+			color: rgb(0, 0, 255);
+		}
+		p {
+			text-align: center;
+			font-size: 0.9rem;
+		}
+	}
+
+	.info {
+		margin-top: 20px;
+		line-height: 1.5rem;
+		p {
+			text-align: left;
+			color: green;
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.objective {
+		@include inner_card();
+		top: 18%;
+		right: 23%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		font-size: 0.9em;
+		color: white;
+		border-radius: 10px;
+		font-family: 'RussoOne';
+		line-height: 1.5em;
+
+		h5 {
+			text-align: left;
+			width: 100%;
+			margin-bottom: 30px;
+			font-size: 1.3rem;
+			color: #000;
+			filter: blur(4px);
+		}
+		p {
+			text-align: center;
+			filter: blur(3px);
+			margin-bottom: 20px;
+		}
+		span {
+			color: rgb(189, 196, 255);
+		}
+		&:hover {
+			top: 9%;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
+		}
+	}
+
+	.studies {
+		@include inner_card();
+		top: 21%;
+		right: 20%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		font-size: 1rem;
+		color: white;
+		border-radius: 10px;
+		font-family: 'RussoOne';
+		line-height: 1.5em;
+		h5 {
+			text-align: left;
+			width: 100%;
+			margin-bottom: 30px;
+			font-size: 1.3rem;
+			color: #000;
+			filter: blur(4px);
+		}
+		p {
+			text-align: center;
+			filter: blur(4px);
+			margin-bottom: 15px;
+		}
+		span {
+			color: rgb(189, 196, 255);
+
+			a {
+				color: rgb(189, 196, 255);
+
+				&:hover {
+					color: black;
+				}
+			}
+		}
+		&:hover {
+			top: 9%;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
+		}
+	}
+	.info {
+		@include inner_card();
+		background: rgba(39, 33, 53, 0.45);
+
+		top: 25%;
+		right: 17%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: left;
+		font-size: 1.3rem;
+		color: white;
+		font-weight: 600;
+		font-family: 'Iceland';
+		line-height: 1.2em;
+		h5 {
+			text-align: left;
+			width: 100%;
+			font-size: 1.3rem;
+			color: #000;
+			font-family: 'RussoOne';
+			margin-bottom: 10px;
+		}
+		p {
+			margin: 0;
+			span {
+				color: rgb(189, 196, 255);
+				text-shadow: 0px 0px 3px black;
+			}
+		}
+		&:hover {
+			transform: rotateY(0deg) skew(0deg);
+		}
+	}
+	.active {
+		top: 29%;
+		right: 14%;
+		z-index: 10;
+		background: rgba(39, 33, 53, 0.466) !important;
+
+		h5,
+		p {
+			filter: blur(0);
+		}
+		&:hover {
+			transform: rotateY(0deg) skew(0deg);
+			top: 28% !important;
+		}
+	}
+	.inactive {
+		background: rgba(39, 33, 53, 0.35) !important;
+
+		&:hover {
+			transform: rotateY(45deg) skewY(-15deg) !important;
+		}
+		a,
+		h5,
+		p {
+			filter: blur(5px);
+		}
+	}
+	.off {
+		top: 21% !important;
+		right: 20% !important;
+		&:hover {
+			top: 9% !important;
+			h5 {
+				filter: blur(0);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.btn_download {
+	display: flex;
+	align-items: center;
+	color: rgb(189, 196, 255);
+
+	margin-top: 0.7em;
+	padding: 0.5em 0.5em;
+	border-radius: 0.25em;
+	font-size: 1rem;
+	font-weight: 700;
+	background: rgba(18, 72, 92, 0.38);
+	border: none;
+	font-family: 'Iceland';
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		color: white;
+		background: rgba(18, 72, 92, 1);
+	}
+	svg {
+		margin-right: 10px;
+	}
+}

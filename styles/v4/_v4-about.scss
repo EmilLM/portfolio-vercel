@@ -1,0 +1,105 @@
+
+.v4-content {
+    z-index: -1;
+    .v4-about {
+        // height: 110vh;
+        margin-top: 18px;
+        width: 90%;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-evenly;
+        background: none !important;
+        margin-bottom: 20px;
+
+    }
+    h2 {
+        font-size: 2rem;
+        margin: 1em;
+    }
+    .about-code {
+        font-size: 1.2rem;
+        padding: 0.5em 1em;
+        line-height: 1.2em;
+        margin: 20px 10px;
+        z-index: -1;
+        @media screen and (min-width: 600px) {
+            font-size: 1.1rem; 
+        }
+        span {
+            color: #0101FF !important;
+        }
+    }
+    .v4-btn-download {
+        text-decoration: none;
+        button {
+            font-weight: 700;
+        }
+    }
+    .about-info {
+        background: none;
+        color: gray;
+        max-width: 420px;
+        line-height: 1.5em;
+        margin: 10px 0;
+        font-size: 0.8rem;
+        padding: 1.3em 1.5em; 
+        margin: 10px;
+        @media screen and (min-width: 1000px) {
+            max-width: 700px;
+        }
+        span {
+            color: blue;
+        }
+        #cl-link {
+            color: blue;
+            text-decoration: underline;
+            font-weight: 700;
+            &:hover {
+                color: navy;
+            }
+        }
+    }
+    .skills-container {
+         margin: 20px 7px;
+        .card-icon {
+            border-radius: 100% !important;
+            width: 40px !important;
+            height: 40px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                font-size: 18px;
+            }
+        }
+        .skills-card {
+            background: none;
+            transition: box-shadow 0s;
+            font-size: 1.25rem;
+            @media screen and (min-width: 300px) {
+                font-size: 1rem; 
+            }
+             @media screen and (min-width: 370px) {
+                font-size: 1.15rem; 
+            }
+            @media screen and (min-width: 920px) {
+                font-size: 1rem; 
+            }
+            strong {
+                color: rgb(60, 190, 233);
+            }
+            li {
+                color: gray;
+            }
+        }
+        .skills-card::before {
+            background: blue;
+        }
+        svg {
+            color: blue;
+        }
+    }
+    
+
+}
