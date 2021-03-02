@@ -1,12 +1,9 @@
 import '../styles/globals.scss'
 import "../styles/main.scss"
 
-import {useState, useEffect} from 'react';
-// required import to prevent prerendered icon before css loads
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import {useState} from 'react';
 import Head from "next/head"
 import MiscContext from "../components/MiscContext.jsx";
-
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';

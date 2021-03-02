@@ -1,7 +1,6 @@
 import { Card } from 'ui-neumorphism';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { FaGithubSquare } from 'react-icons/fa';
+import { GoScreenFull } from 'react-icons/go';
 import MiscContext from '../../MiscContext';
 import React, { useContext } from 'react';
 
@@ -42,7 +41,8 @@ const Project = ({
 								rel='noopener noreferrer'
 								id='demo'
 							>
-								<FontAwesomeIcon icon={faLaptopCode} /> &nbsp; Demo
+								<GoScreenFull />
+								&nbsp; Demo
 							</a>
 							<a
 								href={sourceLink}
@@ -50,7 +50,7 @@ const Project = ({
 								rel='noopener noreferrer'
 								id='source'
 							>
-								<FontAwesomeIcon icon={faGithubSquare} />
+								<FaGithubSquare />
 								&nbsp; Source
 							</a>
 						</div>

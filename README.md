@@ -33,9 +33,9 @@ The project's purpose is to display all my major live projects alongside a bit o
 
 Other dependencies: 
 
-- [Font Awesome](https://fontawesome.com) - Icon library
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
 - [EmailJs](https://www.emailjs.com) - Email sender
-- [Swiper JS](https://swiperjs.com) - Slider library
+- [SwiperJs](https://swiperjs.com) - Slider library
 - [React Scrollspy](https://makotot.github.io/react-scrollspy/) - Scrollspy navigation library
 - [React Lazyload](https://www.npmjs.com/package/react-lazy-load) - Lazyload images library
 - [React Ripples](https://rwu823.github.io/react-ripples/) - Ripples for buttons library

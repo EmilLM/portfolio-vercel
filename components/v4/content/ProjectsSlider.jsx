@@ -1,7 +1,6 @@
 import Project from './Project';
 import projectsData from '../../../projectsData';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import { useState } from 'react';
 
 const ProjectsSlider = ({ theme }) => {
@@ -44,13 +43,13 @@ const ProjectsSlider = ({ theme }) => {
 				className={`prev-slide ${theme && 'prev-slide-dark'}`}
 				onClick={prevSlide}
 			>
-				<FontAwesomeIcon icon={faAngleLeft} />
+				<FaAngleLeft />
 			</button>
 			<button
 				className={`next-slide ${theme && 'next-slide-dark'}`}
 				onClick={nextSlide}
 			>
-				<FontAwesomeIcon icon={faAngleRight} />
+				<FaAngleRight />
 			</button>
 		</div>
 	);

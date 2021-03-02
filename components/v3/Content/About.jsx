@@ -1,11 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faDownload,
-	faTools,
-	faPencilAlt,
-	faDatabase,
-	faDesktop,
-} from '@fortawesome/free-solid-svg-icons';
+
+import {FaDownload, FaTools, FaPencilAlt, FaDatabase, FaDesktop} from 'react-icons/fa';
 import { Fade, Flip, JackInTheBox, Bounce } from 'react-awesome-reveal';
 
 const About = ({ children }) => {
@@ -35,7 +29,7 @@ const About = ({ children }) => {
 						href='/assets/CV_Luchian_Emil.pdf'
 						download='CV_Luchian_Emil.pdf'
 					>
-						<FontAwesomeIcon icon={faDownload} />
+						<FaDownload />
 						Download CV
 					</a>
 				</Fade>
@@ -60,7 +54,7 @@ const About = ({ children }) => {
 				<JackInTheBox triggerOnce>
 					<div className='skills-container'>
 						<div className='skills-card'>
-							<FontAwesomeIcon icon={faPencilAlt} />
+							<FaPencilAlt/>
 							<strong>UI/UX</strong>
 							<ul>
 								<li>Html5</li>
@@ -70,7 +64,7 @@ const About = ({ children }) => {
 							</ul>
 						</div>
 						<div className='skills-card'>
-							<FontAwesomeIcon icon={faDesktop} />
+							<FaDesktop />
 							<strong>Front-end</strong>
 							<ul>
 								<li>Javascript</li>
@@ -80,7 +74,7 @@ const About = ({ children }) => {
 							</ul>
 						</div>
 						<div className='skills-card'>
-							<FontAwesomeIcon icon={faDatabase} />
+							<FaDatabase />
 							<strong>Back-end</strong>
 							<ul>
 								<li>MongoDB</li>
@@ -90,7 +84,7 @@ const About = ({ children }) => {
 							</ul>
 						</div>
 						<div className='skills-card '>
-							<FontAwesomeIcon icon={faTools} />
+							<FaTools />
 							<strong>Tools</strong>
 							<ul>
 								<li>Jest</li>

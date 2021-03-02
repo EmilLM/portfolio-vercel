@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
 import Ripples from 'react-ripples';
 
 const ExpandButton = ({ setExpand, expand }) => {
@@ -19,10 +18,10 @@ const ExpandButton = ({ setExpand, expand }) => {
 				<button className={`button-expand`} onClick={handleClick}>
 					{!expand ? (
 						<div className='heartbeat'>
-							<FontAwesomeIcon icon={faArrowDown} />
+							<FaArrowDown />
 						</div>
 					) : (
-						<FontAwesomeIcon icon={faArrowUp} />
+						<FaArrowUp />
 					)}
 				</button>
 			</Ripples>

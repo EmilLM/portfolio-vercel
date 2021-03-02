@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faDownload,
-	faTools,
-	faPencilAlt,
-	faDatabase,
-	faDesktop,
-} from '@fortawesome/free-solid-svg-icons';
+	FaDownload,
+	FaTools,
+	FaPencilAltF,
+	FaDatabase,
+	FaDesktop,
+	FaPencilAlt,
+} from 'react-icons/fa';
 import { Fade, Flip, JackInTheBox, Bounce } from 'react-awesome-reveal';
 import { Card, Button } from 'ui-neumorphism';
 
@@ -29,7 +29,7 @@ const About = () => {
 						className={'v4-btn-download'}
 					>
 						<Button dark={theme} color='var(--primary)'>
-							<FontAwesomeIcon icon={faDownload} />
+							<FaDownload />
 							&nbsp; Download CV
 						</Button>
 					</a>
@@ -75,7 +75,7 @@ const About = () => {
 					<div className='skills-container'>
 						<Card inset className='skills-card' dark={theme}>
 							<Card className='card-icon'>
-								<FontAwesomeIcon icon={faPencilAlt} />
+								<FaPencilAlt />
 							</Card>
 							<strong>UI/UX</strong>
 							<ul>
@@ -87,7 +87,7 @@ const About = () => {
 						</Card>
 						<Card inset className='skills-card' dark={theme}>
 							<Card className='card-icon'>
-								<FontAwesomeIcon icon={faDesktop} />
+								<FaDesktop />
 							</Card>
 							<strong>Front-end</strong>
 							<ul>
@@ -99,7 +99,7 @@ const About = () => {
 						</Card>
 						<Card inset className='skills-card' dark={theme}>
 							<Card className='card-icon'>
-								<FontAwesomeIcon icon={faDatabase} />
+								<FaDatabase />
 							</Card>
 							<strong>Back-end</strong>
 							<ul>
@@ -111,7 +111,7 @@ const About = () => {
 						</Card>
 						<Card inset className='skills-card' dark={theme}>
 							<Card className='card-icon'>
-								<FontAwesomeIcon icon={faTools} />
+								<FaTools />
 							</Card>
 							<strong>Tools</strong>
 							<ul>
