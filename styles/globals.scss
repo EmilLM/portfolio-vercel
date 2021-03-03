@@ -1,23 +1,22 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 /* fluid font-size */
 html {
-  font-size: 14px;
-  font-family: "Iceland";
-
+	font-size: 14px;
+	font-family: 'Iceland';
 }
 @media screen and (min-width: 300px) {
-  html {
-    font-size: calc(14px + 6 * ((100vw - 300px) / 700));
-  }
+	html {
+		font-size: calc(14px + 6 * ((100vw - 300px) / 700));
+	}
 }
 @media screen and (min-width: 1000px) {
-  html {
-    font-size: 20px;
-  }
+	html {
+		font-size: 20px;
+	}
 }
 /* responsive font-size */
 /* html {
@@ -41,39 +40,43 @@ html {
 } */
 
 @font-face {
-  font-family: 'Iceland';
-  src: url("../public/assets/fonts/Iceland-Regular.ttf");
+	font-family: 'Iceland';
+	src: url('../public/assets/fonts/Iceland-Regular.ttf');
+  // to avoid invisible text on load
+	font-display: swap;
 }
 @font-face {
-  font-family: 'RussoOne';
-  src: url("../public/assets/fonts/RussoOne-Regular.ttf");
+	font-family: 'RussoOne';
+	src: url('../public/assets/fonts/RussoOne-Regular.ttf');
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Quantum';
-  src: url("../public/assets/fonts/Quantum.otf");
+	font-family: 'Quantum';
+	src: url('../public/assets/fonts/Quantum.otf');
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Anurati';
-  src: url("../public/assets/fonts/Anurati-Regular.otf");
+	font-family: 'Anurati';
+	src: url('../public/assets/fonts/Anurati-Regular.otf');
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gone';
-  src: url("../public/assets/fonts/Youre-Gone.ttf");
+	font-family: 'Gone';
+	src: url('../public/assets/fonts/Youre-Gone.ttf');
+	font-display: swap;
 }
-
 
 body {
-  
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-*:before, *:after {
-  box-sizing: border-box; 
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 *:focus {
-  outline: 0;
-  outline: none;
+	outline: 0;
+	outline: none;
 }
-

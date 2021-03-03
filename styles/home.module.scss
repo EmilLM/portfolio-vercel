@@ -37,7 +37,7 @@
 	}
 	.choose {
 		color: black;
-		font-family: 'Iceland';
+		font-family: 'Iceland', sans-serif;
 		text-transform: uppercase;
 		text-shadow: 0px 0px 3px rgb(8, 0, 255);
 		font-weight: 700px;
@@ -47,7 +47,7 @@
 		}
 	}
 	.your {
-		font-family: 'Quantum';
+		font-family: 'Quantum', sans-serif;
 		background: -webkit-linear-gradient(-90deg, #000000, #10047e);
 		background-clip: text;
 		color: transparent;
@@ -63,7 +63,7 @@
 	}
 	.style {
 		padding: 0 3px;
-		font-family: 'Anurati';
+		font-family: 'Anurati', sans-serif;
 		color: transparent;
 		background-clip: text;
 		background-color: #000000;
@@ -141,7 +141,7 @@
 			display: none;
 			z-index: 11;
 			font-size: 1.7rem;
-			font-family: 'Gone';
+			font-family: 'Gone', sans-serif;
 			color: transparent;
 			background-clip: text;
 			background-color: #000000;
