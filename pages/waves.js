@@ -5,15 +5,15 @@ import Footer from "../components/v3/Footer/Footer"
 import MiscContext from '../components/MiscContext.jsx'
 import {useEffect, useState} from 'react';
 
-export default function Waves({animateCookie, themeCookie}) {
+export default function Waves() {
 
   const [animate, setAnimate] = useState(false);
   const [theme, setTheme] = useState(false);
 
-  useEffect(()=> {
-    setAnimate(animateCookie);
-    setTheme(themeCookie)
-  }, [])
+  // useEffect(()=> {
+  //   setAnimate(animateCookie);
+  //   setTheme(themeCookie)
+  // }, [])
 
   return (
     <>
@@ -29,13 +29,13 @@ export default function Waves({animateCookie, themeCookie}) {
   )
 }
 
-export async function getServerSideProps({req, res}) {
-  const animateCookie = JSON.parse(req.cookies.animate);
-  const themeCookie = JSON.parse(req.cookies.theme)
-  return {
-    props: {
-      animateCookie,
-      themeCookie
-    }
-  }
-} 
+// export async function getServerSideProps({req, res}) {
+//   const animateCookie = JSON.parse(req.cookies.animate);
+//   const themeCookie = JSON.parse(req.cookies.theme)
+//   return {
+//     props: {
+//       animateCookie,
+//       themeCookie
+//     }
+//   }
+// } 

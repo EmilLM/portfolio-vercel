@@ -11,7 +11,6 @@ const Navbar = () => {
 	const handleTheme = () => {
 		setTheme(!theme);
 		cookie.set('neoTheme', !theme, { expires: 365 });
-		console.log(cookie.get('neoTheme'));
 	};
 	const [offset, setOffset] = useState(false);
 	const [isSmall, setIsSmall] = useState(false);

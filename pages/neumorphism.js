@@ -8,7 +8,7 @@ import {useEffect, useState} from 'react';
 import 'ui-neumorphism/dist/index.css';
 import { overrideThemeVariables } from 'ui-neumorphism';
 
-const Neumorphism = ({themeCookie}) => {
+const Neumorphism = () => {
   const [theme, setTheme] = useState(false);
 
     useEffect(()=>{
@@ -27,7 +27,7 @@ const Neumorphism = ({themeCookie}) => {
             '--primary-light': '#4526f9'
             
         })
-        setTheme(themeCookie)
+        // setTheme(themeCookie)
     }, [])
 
     return (
@@ -46,11 +46,11 @@ const Neumorphism = ({themeCookie}) => {
  
 export default Neumorphism;
 
-export async function getServerSideProps({req, res}) {
-  const themeCookie = JSON.parse(req.cookies.neoTheme)
-  return {
-    props: {
-      themeCookie
-    }
-  }
-} 
+// export async function getServerSideProps({req, res}) {
+//   const themeCookie = JSON.parse(req.cookies.neoTheme)
+//   return {
+//     props: {
+//       themeCookie
+//     }
+//   }
+// } 
