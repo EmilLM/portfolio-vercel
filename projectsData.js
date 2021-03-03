@@ -53,7 +53,7 @@
         sourceLink: 'https://github.com/EmilLM/App-portfolio-nextjs',
         altText: "Portfolio",
         title: 'Portfolio',
-        description: "Page for all my projects. Designed in various styles.",
+        description: "Page for all my projects. Designed in various styles. Always a work in progress.",
         stack: 'React-Scss-Next.js',
         // class needed for styling the waves in various positions
         wavesClass: 'project1-waves'
