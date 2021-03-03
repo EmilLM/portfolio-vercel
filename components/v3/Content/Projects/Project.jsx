@@ -1,9 +1,9 @@
 import { FaGithubSquare } from 'react-icons/fa';
-import {GoScreenFull} from 'react-icons/go'
+import { GoScreenFull } from 'react-icons/go';
 
 import Waves from '../../Waves';
-// import Image from "next/image"
-// next.js Image not compatible with firebase, image isnt displayed!???
+import Image from 'next/image';
+
 const Project = ({ project }) => {
 	const {
 		src,
@@ -23,10 +23,12 @@ const Project = ({ project }) => {
 
 				<div className='image-container'>
 					<a href={link} target='_blank'>
-						<img
+						<Image
 							className='project-image'
 							src={`/assets/${src}`}
 							alt={altText}
+							width='700'
+							height='380'
 						/>
 					</a>
 				</div>
