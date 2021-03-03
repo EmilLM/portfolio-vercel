@@ -1,16 +1,15 @@
-import {useEffect} from "react"
-
 import Head from 'next/head';
 import Header from "../components/v4/header/Header";
 import Content from "../components/v4/content/Content"
 import Footer from '../components/v4/footer/Footer';
-
+import MiscContext from '../components/MiscContext.jsx'
+import {useEffect, useState} from 'react';
 
 import 'ui-neumorphism/dist/index.css';
 import { overrideThemeVariables } from 'ui-neumorphism';
 
-
-const Neumorphism = () => {
+const Neumorphism = ({themeCookie}) => {
+  const [theme, setTheme] = useState(false);
 
     useEffect(()=>{
         overrideThemeVariables({
@@ -28,19 +27,30 @@ const Neumorphism = () => {
             '--primary-light': '#4526f9'
             
         })
-    })
+        setTheme(themeCookie)
+    }, [])
 
     return (
         <>
             <Head>
                 <title>Neumorphism</title>
             </Head>
-            <Header/>
-            <Content/>
-            <Footer/>
-            
+            <MiscContext.Provider value={{theme, setTheme}}>
+                <Header/>
+                <Content/>
+                <Footer/>
+            </MiscContext.Provider>
         </>
     );
 }
  
 export default Neumorphism;
+
+export async function getServerSideProps({req, res}) {
+  const themeCookie = JSON.parse(req.cookies.neoTheme)
+  return {
+    props: {
+      themeCookie
+    }
+  }
+} 

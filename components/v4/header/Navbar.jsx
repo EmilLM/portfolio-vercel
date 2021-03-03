@@ -1,13 +1,18 @@
 import { useState, useContext, useEffect } from 'react';
 import MiscContext from '../../MiscContext';
 import StylesButton from './StylesButton';
-
+import cookie from 'js-cookie';
 import { FaLightbulb } from 'react-icons/fa';
 import { IconButton, Card } from 'ui-neumorphism';
 
 const Navbar = () => {
 	const { theme, setTheme } = useContext(MiscContext);
 
+	const handleTheme = () => {
+		setTheme(!theme);
+		cookie.set('neoTheme', !theme, { expires: 365 });
+		console.log(cookie.get('neoTheme'));
+	};
 	const [offset, setOffset] = useState(false);
 	const [isSmall, setIsSmall] = useState(false);
 
@@ -32,7 +37,7 @@ const Navbar = () => {
 					color={theme ? 'var(--primary-dark)' : 'var(--primary)'}
 					className='v4-theme-change'
 					id={offset ? 'theme-scrolling' : ''}
-					onClick={() => setTheme(!theme)}
+					onClick={handleTheme}
 					dark={theme}
 				>
 					<FaLightbulb />
