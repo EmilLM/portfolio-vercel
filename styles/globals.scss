@@ -6,7 +6,7 @@
 /* fluid font-size */
 html {
 	font-size: 14px;
-	font-family: 'Iceland';
+	font-family: 'Iceland', sans-serif;
 }
 @media screen and (min-width: 300px) {
 	html {
@@ -67,10 +67,6 @@ html {
 	font-display: swap;
 }
 
-body {
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
 *:before,
 *:after {
