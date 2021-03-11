@@ -2,6 +2,8 @@ import style from './project.module.scss';
 import { useState } from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import { GoScreenFull } from 'react-icons/go';
+
+
 const Project = ({ project }) => {
 	const { title, stack, link, sourceLink, description } = project;
 	const [showInfo, setShowInfo] = useState(false);

@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import globalStyle from '../components/v5/global.module.scss';
-import Header from '../components/v5/Header/Header.jsx';
-import About from '../components/v5/About/About.jsx';
-import Projects  from "../components/v5/Projects/Projects.jsx";
-import Contact from "../components/v5/Contact/Contact"
+import globalStyle from '../components/v5-glassmorphism/global.module.scss';
+import Header from '../components/v5-glassmorphism/Header/Header.jsx';
+import About from '../components/v5-glassmorphism/About/About.jsx';
+import Projects  from "../components/v5-glassmorphism/Projects/Projects.jsx";
+import Contact from "../components/v5-glassmorphism/Contact/Contact"
 import {useRef, useEffect} from 'react';
 
 export default function Glassmorphism() {

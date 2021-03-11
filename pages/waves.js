@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Content from '../components/v3/Content/Content.jsx'
-import Header from "../components/v3/Header/Header"
-import Footer from "../components/v3/Footer/Footer"
+import Content from '../components/v3-waves/Content/Content.jsx'
+import Header from "../components/v3-waves/Header/Header"
+import Footer from "../components/v3-waves/Footer/Footer"
 import MiscContext from '../components/MiscContext.jsx'
 import {useEffect, useState} from 'react';
 import cookie from "js-cookie";

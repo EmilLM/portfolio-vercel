@@ -18,9 +18,8 @@ const Header = ({ scrollToRef }) => {
 	return (
 		<>
 			<div className={style.container}>
-				<h1 className={style.title}>Portfolio</h1>
+				<h1 className={style.title}>Port folio</h1>
 				<div className={style.content} ref={tilt}>
-					<h2>Luchian M. Emil</h2>
 					<p>- Web Developer -</p>
 					<div className={style.header_buttons}>
 						<button onClick={scrollToRef}>

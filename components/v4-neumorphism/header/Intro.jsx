@@ -1,4 +1,4 @@
-import Logo from '../../Logo';
+import Logo from '../../Logo/Logo';
 import { Button, Card, Divider } from 'ui-neumorphism';
 import { FaArrowDown } from 'react-icons/fa';
 

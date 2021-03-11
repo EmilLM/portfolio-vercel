@@ -7,7 +7,7 @@ import ExpandButton from './Projects/Expand';
 import MiscContext from '../../MiscContext';
 
 import { Flip, Fade } from 'react-awesome-reveal';
-import Coverflow from '../../v5/Projects/Coverflow/Coverflow';
+import Coverflow from '../../v5-glassmorphism/lassmorphism/Projects/Coverflow/Coverflow';
 export default function Content() {
 	const { theme } = useContext(MiscContext);
 	const [expand, setExpand] = useState(false);
