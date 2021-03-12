@@ -1,4 +1,4 @@
 {
     "presets": ["next/babel"],
-    "plugins": ["@babel/plugin-syntax-jsx"]
+    "plugins": ["@babel/plugin-syntax-jsx","react-remove-properties"]
   }

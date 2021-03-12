@@ -2,12 +2,11 @@ import { useState, useContext } from 'react';
 import About from './About';
 import ProjectsExpanded from './Projects/ProjectsExpanded';
 import Waves from '../Waves';
-import SlickCarousel from './Projects/SlickCarousel';
 import ExpandButton from './Projects/Expand';
 import MiscContext from '../../MiscContext';
 
 import { Flip, Fade } from 'react-awesome-reveal';
-import Coverflow from '../../v5-glassmorphism/lassmorphism/Projects/Coverflow/Coverflow';
+import Coverflow from '../../v5-glassmorphism/Projects/Coverflow/Coverflow';
 export default function Content() {
 	const { theme } = useContext(MiscContext);
 	const [expand, setExpand] = useState(false);

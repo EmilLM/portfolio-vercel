@@ -26,7 +26,7 @@ The project's purpose is to display all my major live projects alongside a bit o
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [React](https://reactjs.org) - UI Framework
+- [React](https://reactjs.org) - UI Library
 - [Next.js](https://nextjs.org) - Server-side Development Framework
 - [Scss](https://sass-lang.com) - Styles library
 - [NodeJs](https://nodejs.org/en/) - Server Environment

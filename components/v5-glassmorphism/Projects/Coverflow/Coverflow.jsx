@@ -5,7 +5,7 @@ import Project from './Project';
 
 SwiperCore.use([Navigation, EffectCoverflow, Parallax]);
 
-const Coverflow = (props) => {
+const Coverflow = () => {
 	return (
 		<>
 			<Swiper
@@ -40,7 +40,7 @@ const Coverflow = (props) => {
 							key={project.id}
 							style={{ backgroundImage: `url(/assets/${project.src})` }}
 						>
-							<Project project={project} />
+							<Project {...project}/>
 						</SwiperSlide>
 					);
 				})}

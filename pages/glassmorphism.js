@@ -5,6 +5,8 @@ import About from '../components/v5-glassmorphism/About/About.jsx';
 import Projects  from "../components/v5-glassmorphism/Projects/Projects.jsx";
 import Contact from "../components/v5-glassmorphism/Contact/Contact"
 import {useRef, useEffect} from 'react';
+import Coverflow from '../components/v5-glassmorphism/Projects/Coverflow/Coverflow';
+import Project from '../components/v5-glassmorphism/Projects/Coverflow/Project';
 
 export default function Glassmorphism() {
 
@@ -19,7 +21,9 @@ export default function Glassmorphism() {
       <main className={globalStyle.v5}>
         <Header scrollToRef={scrollToRef}/>
         <About aboutRef={aboutRef}/>
-        <Projects/>
+        <Projects>
+          <Coverflow/>
+        </Projects>
         <Contact/>
       </main>
     </>

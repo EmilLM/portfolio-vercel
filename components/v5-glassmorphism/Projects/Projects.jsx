@@ -1,14 +1,12 @@
 import style from './projects.module.scss';
-import Coverflow from './Coverflow/Coverflow';
-import Project from './Coverflow/Project';
-const Projects = () => {
+
+
+const Projects = (props) => {
 	return (
 		<>
 			<div className={style.container}>
 				<h1 className={style.title}>Projects</h1>
-				<Coverflow>
-					<Project />
-				</Coverflow>
+				{props.children}
 			</div>
 		</>
 	);
