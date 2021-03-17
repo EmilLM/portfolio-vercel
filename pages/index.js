@@ -1,9 +1,10 @@
 import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
 import Img from 'react-optimized-image';
-import glass from '../public/assets/glassmorphism.webp';
+import glassImg from '../public/assets/glassmorphism.webp';
+import neuImg from '../public/assets/neumorphism.webp';
+import wavesImg from '../public/assets/waves_about.webp';
 
 const Home = () => {
 	return (
@@ -18,30 +19,22 @@ const Home = () => {
 					<span className={styles.style}>style </span>
 				</h2>
 				<div className={styles.accordion}>
-					<div className={styles.glass}>
-						<Img alt='glassmorphism' src={glass} />
+					<div className={`${styles.section} ${styles.glassmorphism}`}>
+						<Img alt='glassmorphism' src={glassImg} />
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
 						</Link>
 					</div>
 					<div className={`${styles.waves} ${styles.section}`}>
-						<Image
-							src='/assets/waves_about.webp'
-							alt='waves design'
-							layout='fill'
-							priority
-						/>
+						<Img alt='waves design' src={wavesImg} />
+
 						<Link href='/waves'>
 							<a className={styles.type}>Waves</a>
 						</Link>
 					</div>
 					<div className={`${styles.neumorphism} ${styles.section}`}>
-						<Image
-							src='/assets/neumorphism.webp'
-							alt='neumorphism'
-							layout='fill'
-							priority
-						/>
+						<Img alt='neumorphism' src={neuImg} />
+
 						<Link href='/neumorphism'>
 							<a className={styles.type}>Neumorphism</a>
 						</Link>
