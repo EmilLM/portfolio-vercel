@@ -4,9 +4,8 @@ import Header from '../components/v5-glassmorphism/Header/Header.jsx';
 import About from '../components/v5-glassmorphism/About/About.jsx';
 import Projects from '../components/v5-glassmorphism/Projects/Projects.jsx';
 import Contact from '../components/v5-glassmorphism/Contact/Contact';
-import { useRef, useEffect } from 'react';
+import { useRef} from 'react';
 import Coverflow from '../components/v5-glassmorphism/Projects/Coverflow/Coverflow';
-import Project from '../components/v5-glassmorphism/Projects/Coverflow/Project';
 
 export default function Glassmorphism() {
 	const aboutRef = useRef(null);
