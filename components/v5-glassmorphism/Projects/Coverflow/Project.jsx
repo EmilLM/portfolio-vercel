@@ -13,12 +13,13 @@ const Project = ({ title, stack, link, sourceLink, description }) => {
 				data-swiper-parallax-opacity='0'
 				className={showInfo ? style.close : style.show}
 				onClick={() => setShowInfo(!showInfo)}
-				data-testid="showInfo_test"
+				data-testid='showInfo_button'
 			>
 				{showInfo ? 'X' : '?'}
 			</button>
 
 			<div
+				data-testid='showInfo_div'
 				className={showInfo ? style.content : style.exit}
 				// swiper parallax
 				data-swiper-parallax-scale='.6'

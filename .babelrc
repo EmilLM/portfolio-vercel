@@ -1,4 +1,5 @@
 {
     "presets": ["next/babel"],
-    "plugins": ["@babel/plugin-syntax-jsx","react-remove-properties"]
+    "plugins": ["@babel/plugin-syntax-jsx"]
   }
+  // "react-remove-properties" to remove data-testid

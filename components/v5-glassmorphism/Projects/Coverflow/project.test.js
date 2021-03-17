@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 import Project from './Project';
 
 describe('<Project/>', ()=>{
-    let expectedProps, wrapper, handleClick ;
+    let expectedProps, component, handleClick ;
 
     beforeEach( () => {
         expectedProps = {
@@ -34,20 +34,18 @@ describe('<Project/>', ()=>{
         expect(source).toBeVisible();
     });
 
-    it('change class on click', async ()=>{
+    it('change class on click', ()=>{
         const {getByTestId} = component;
-        const button = getByTestId('showInfo_test')
+        const button = getByTestId('showInfo_button')
+        const div = getByTestId('showInfo_div')
+
         expect(button).toHaveClass('show')
+        expect(div).toHaveClass('exit')
 
-        await act(async () => {
-            fireEvent.click(button)
-        })
-      
-        // expect(handleClick).toHaveBeenCalledTimes(1)
-        expect(button).toHaveClass('close')
-
+        fireEvent.click(button)
         
-
+        expect(button).toHaveClass('close')
+        expect(div).toHaveClass('content')
     })
 })
 

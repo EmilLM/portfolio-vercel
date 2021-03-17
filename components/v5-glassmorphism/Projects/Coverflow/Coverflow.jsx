@@ -40,7 +40,7 @@ const Coverflow = () => {
 							key={project.id}
 							style={{ backgroundImage: `url(/assets/${project.src})` }}
 						>
-							<Project {...project}/>
+							<Project {...project} />
 						</SwiperSlide>
 					);
 				})}

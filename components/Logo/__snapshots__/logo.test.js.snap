@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class=" swirl-in logo footer-logo tooltip undefined "
+        class=" swirl-in logo footer-logo tooltip clasic "
         data-testid="logo_test"
       >
         <span
@@ -27,7 +27,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class=" swirl-in logo footer-logo tooltip undefined "
+      class=" swirl-in logo footer-logo tooltip clasic "
       data-testid="logo_test"
     >
       <span
