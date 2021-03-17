@@ -2,12 +2,14 @@ import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
+import Img from 'react-optimized-image';
+import glass from '../public/assets/glassmorphism.webp';
 
 const Home = () => {
 	return (
 		<>
 			<Head>
-				<title>Portfolio home page</title>
+				<title>Portfolio</title>
 			</Head>
 			<div className={styles.container}>
 				<h2 className={styles.title}>
@@ -16,13 +18,8 @@ const Home = () => {
 					<span className={styles.style}>style </span>
 				</h2>
 				<div className={styles.accordion}>
-					<div className={`${styles.glassmorphism} ${styles.section}`}>
-						<Image
-							alt='glassmorphism'
-							src='/assets/glassmorphism.webp'
-							layout='fill'
-							priority
-						/>
+					<div className={styles.glass}>
+						<Img alt='glassmorphism' src={glass} />
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
 						</Link>
