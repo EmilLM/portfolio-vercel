@@ -21,6 +21,7 @@ const Home = () => {
 							alt='glassmorphism'
 							src='/assets/glassmorphism.webp'
 							layout='fill'
+							priority
 						/>
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
@@ -31,6 +32,7 @@ const Home = () => {
 							src='/assets/waves_about.webp'
 							alt='waves design'
 							layout='fill'
+							priority
 						/>
 						<Link href='/waves'>
 							<a className={styles.type}>Waves</a>
@@ -41,6 +43,7 @@ const Home = () => {
 							src='/assets/neumorphism.webp'
 							alt='neumorphism'
 							layout='fill'
+							priority
 						/>
 						<Link href='/neumorphism'>
 							<a className={styles.type}>Neumorphism</a>
