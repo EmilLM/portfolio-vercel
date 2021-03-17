@@ -6,7 +6,7 @@
 /* fluid font-size */
 html {
 	font-size: 14px;
-	font-family: 'Iceland', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 @media screen and (min-width: 300px) {
 	html {
@@ -43,28 +43,28 @@ html {
 	font-family: 'Iceland';
 	src: url('../public/assets/fonts/Iceland-Regular.ttf');
 	// to avoid invisible text on load
-	// font-display: swap;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'RussoOne';
 	src: url('../public/assets/fonts/RussoOne-Regular.ttf');
-	// font-display: swap;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'Quantum';
 	src: url('../public/assets/fonts/Quantum.otf');
-	// font-display: swap;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'Anurati';
 	src: url('../public/assets/fonts/Anurati-Regular.otf');
-	// font-display: swap;
+	font-display: fallback;
 }
 
 @font-face {
 	font-family: 'Gone';
 	src: url('../public/assets/fonts/Youre-Gone.ttf');
-	// font-display: swap;
+	font-display: fallback;
 }
 
 *:before,

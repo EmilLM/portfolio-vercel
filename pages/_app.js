@@ -6,10 +6,6 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/effect-coverflow/effect-coverflow.scss';
 import Head from 'next/head';
 
-
-
-
-
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
@@ -17,6 +13,12 @@ function MyApp({ Component, pageProps }) {
 				<meta
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width'
+				/>
+				<link
+					rel='preload'
+					href='/assets/fonts/Iceland-Regular.ttf'
+					as='font'
+					crossorigin='anonymous'
 				/>
 			</Head>
 			<Component {...pageProps} />
