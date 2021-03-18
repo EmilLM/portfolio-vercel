@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 					rel='preload'
 					href='/assets/fonts/Iceland-Regular.ttf'
 					as='font'
-					crossorigin='anonymous'
+					crossOrigin='anonymous'
 				/>
 			</Head>
 			<Component {...pageProps} />

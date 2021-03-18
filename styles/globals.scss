@@ -43,7 +43,7 @@ html {
 	font-family: 'Iceland';
 	src: url('../public/assets/fonts/Iceland-Regular.ttf');
 	// to avoid invisible text on load
-	font-display: fallback;
+	// font-display: fallback;
 }
 @font-face {
 	font-family: 'RussoOne';

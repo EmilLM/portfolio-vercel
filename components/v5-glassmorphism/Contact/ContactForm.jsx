@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import style from './form.module.scss';
 
@@ -37,11 +37,9 @@ export default function ContactForm() {
 			.then(
 				(resp) => {
 					setIsValid(resp.status);
-					console.log('Sent', resp);
 				},
 				(err) => {
 					setIsValid(err.status);
-					console.log('FAILED...', err);
 				}
 			);
 	};
@@ -54,11 +52,15 @@ export default function ContactForm() {
 			emailInput: '',
 			messageInput: '',
 		});
+		setTimeout(()=>{
+			setIsValid(false)
+		}, 5000)
+		clearTimeout()
 	};
 
 	return (
 		<div className={style.contact_form}>
-			<p className='form-info'>Feel free to leave some feedback.</p>
+			<p>Feel free to leave some feedback.</p>
 			<form onSubmit={handleSubmit}>
 				<input
 					name='nameInput'
