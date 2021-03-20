@@ -3,6 +3,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { GoScreenFull } from 'react-icons/go';
 import MiscContext from '../../MiscContext';
 import React, { useContext } from 'react';
+import Image from 'next/image';
 
 const Project = ({
 	project,
@@ -11,13 +12,12 @@ const Project = ({
 	nextActive,
 	prevActive,
 }) => {
-	const { id, src, link, sourceLink, title, description, stack } = project;
+	const { id, src, altText, link, sourceLink, title, description, stack } = project;
 	const { theme } = useContext(MiscContext);
 
 	const bgImage = {
 		'--backgroundImage': `url(/assets/${src})`,
 	};
-
 	return (
 		<div
 			id={`${active}${prevActive}${nextActive}`}
@@ -29,7 +29,14 @@ const Project = ({
 					theme ? 'dark-deep-engrave' : 'light-deep-engrave'
 				}`}
 			>
-				<Card className='card-content' dark={theme} style={bgImage}>
+				<Card className='card-content' dark={theme}>
+					<Image
+						alt={altText}
+						src={`/assets/${src}`}
+						layout='fill'
+						style={bgImage}
+					/>
+
 					<div className='info'>
 						<h1 className='title light-h-e'>{title}</h1>
 						<p className='v4-description '>{description}</p>

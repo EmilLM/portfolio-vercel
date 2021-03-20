@@ -19,7 +19,7 @@ const Project = ({ title, stack, link, sourceLink, description }) => {
 			</button>
 
 			<div
-				data-testid='showInfo_div'
+				data-testid='showInfo_div '
 				className={showInfo ? style.content : style.exit}
 				// swiper parallax
 				data-swiper-parallax-scale='.6'

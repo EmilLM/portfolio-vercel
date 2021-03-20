@@ -12,11 +12,14 @@
 		width: 36vw;
 		min-width: 270px;
 		overflow: hidden;
-		background-image: var(--backgroundImage);
-		background-size: cover;
-		background-repeat: no-repeat;
+		position: relative;
 		@media (min-width: 1080px) {
 			margin: 30px;
+		}
+		div:first-child {
+			width: 100%;
+			height: 100%;
+			z-index: 0;
 		}
 	}
 
@@ -25,13 +28,14 @@
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-		background-color: #e4ebf5 !important;
+		background-color: #e4ebf5ee;
 		transform: translateY(100%) translateY(-25%);
 		transition: transform 0.5s ease-out;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		z-index: 10;
 	}
 
 	.info:before {
@@ -42,9 +46,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		background-image: var(--backgroundImage);
 		filter: blur(7px);
-		background-size: cover;
 		opacity: 0.25;
 		transform: translateY(-100%) translateY(25%);
 		transition: transform 0.5s ease-out;
