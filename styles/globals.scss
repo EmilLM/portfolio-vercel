@@ -42,8 +42,8 @@ html {
 @font-face {
 	font-family: 'Iceland';
 	src: url('../public/assets/fonts/Iceland-Regular.ttf');
-	// to avoid invisible text on load
-	// font-display: fallback;
+	// to avoid flash invisible text on load
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'RussoOne';
@@ -61,11 +61,6 @@ html {
 	font-display: fallback;
 }
 
-@font-face {
-	font-family: 'Gone';
-	src: url('../public/assets/fonts/Youre-Gone.ttf');
-	font-display: fallback;
-}
 
 *:before,
 *:after {

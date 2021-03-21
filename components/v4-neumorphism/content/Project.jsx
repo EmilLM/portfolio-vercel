@@ -15,9 +15,7 @@ const Project = ({
 	const { id, src, altText, link, sourceLink, title, description, stack } = project;
 	const { theme } = useContext(MiscContext);
 
-	const bgImage = {
-		'--backgroundImage': `url(/assets/${src})`,
-	};
+	
 	return (
 		<div
 			id={`${active}${prevActive}${nextActive}`}
@@ -34,7 +32,7 @@ const Project = ({
 						alt={altText}
 						src={`/assets/${src}`}
 						layout='fill'
-						style={bgImage}
+						priority
 					/>
 
 					<div className='info'>

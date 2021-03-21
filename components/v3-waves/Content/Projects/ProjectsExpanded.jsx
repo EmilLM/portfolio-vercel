@@ -1,6 +1,6 @@
 
 import Project from "./Project";
-import projects from "../../../../projectsData"
+import projects from "../../../../utils/projectsData"
 import {useRef, useEffect} from "react"
 
 const ProjectsExpanded = () => {

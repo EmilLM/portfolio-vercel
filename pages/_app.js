@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width'
 				/>
-				<link
+				{/* <link
 					rel='preload'
 					href='/assets/fonts/Iceland-Regular.ttf'
 					as='font'
 					crossOrigin='anonymous'
-				/>
+				/> */}
 			</Head>
 			<Component {...pageProps} />
 		</>

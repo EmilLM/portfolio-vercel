@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import MiscContext from '../../MiscContext';
 import emailjs from 'emailjs-com';
-import classNames from '../../../classNames';
+import classNames from '../../../utils/classNames';
 
 export default function ContactForm() {
 	const { theme } = useContext(MiscContext);

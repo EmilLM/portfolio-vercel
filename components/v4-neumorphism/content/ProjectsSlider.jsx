@@ -1,5 +1,5 @@
 import Project from './Project';
-import projectsData from '../../../projectsData';
+import projectsData from '../../../utils/projectsData';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import { useState } from 'react';
 

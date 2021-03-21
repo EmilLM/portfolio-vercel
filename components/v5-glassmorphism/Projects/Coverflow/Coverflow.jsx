@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, EffectCoverflow, Parallax } from 'swiper';
-import projects from '../../../../projectsData';
+import projects from '../../../../utils/projectsData';
 import Project from './Project';
 
 SwiperCore.use([Navigation, EffectCoverflow, Parallax]);
