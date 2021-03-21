@@ -27,6 +27,9 @@
 			font-size: 1rem;
 			// padding: 9px 10px;
 			color: blue;
+			&:focus {
+				border: 0 !important;
+			}
 		}
 	}
 	.contact-bar {
