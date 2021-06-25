@@ -28,7 +28,7 @@ const Neumorphism = ({themeCookie}) => {
             
         })
         setTheme(themeCookie)
-    }, [])
+    }, [themeCookie])
 
     return (
         <>

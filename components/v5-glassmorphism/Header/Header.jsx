@@ -21,7 +21,7 @@ const Header = ({ scrollToRef }) => {
 	return (
 		<>
 			<div className={style.container}>
-				<Img alt='glassmorphism' src={headerBg} />
+				{/* <Img alt='glassmorphism' src={headerBg} /> */}
 
 				<h1 className={style.title}>Portfolio</h1>
 				<div className={style.content} ref={tilt}>

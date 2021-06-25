@@ -18,7 +18,7 @@ const Contact = () => {
 	return (
 		<>
 			<div className={style.container}>
-				<Img alt='glassmorphism' src={contactBg} className={style.bg} />
+				{/* <Img alt='glassmorphism' src={contactBg} className={style.bg} /> */}
 				<h1 className={style.title}>Contact</h1>
 				<div className={style.card_contact} ref={tilt}>
 					<ContactForm />

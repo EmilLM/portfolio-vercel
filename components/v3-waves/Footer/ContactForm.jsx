@@ -43,6 +43,7 @@ export default function ContactForm() {
 				},
 				(err) => {
 					setIsValid(err.status);
+					console.log(err)
 				}
 			);
 	};
