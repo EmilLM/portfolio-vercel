@@ -8,6 +8,7 @@ export default function ContactForm() {
 		emailInput: '',
 		messageInput: '',
 	});
+	const [isSending, setIsSending] = useState(false);
 	const { nameInput, emailInput, messageInput } = formState;
 	const isEnabled =
 		nameInput.length > 0 && emailInput.length > 0 && messageInput.length > 0;
@@ -37,14 +38,17 @@ export default function ContactForm() {
 			.then(
 				(resp) => {
 					setIsValid(resp.status);
+					setIsSending(false);
 				},
 				(err) => {
 					setIsValid(err.status);
+					setIsSending(false);
 				}
 			);
 	};
 
 	const handleSubmit = (e) => {
+		setIsSending(true);
 		e.preventDefault();
 		sendEmail();
 		setFormState({
@@ -52,10 +56,10 @@ export default function ContactForm() {
 			emailInput: '',
 			messageInput: '',
 		});
-		setTimeout(()=>{
-			setIsValid(false)
-		}, 5000)
-		clearTimeout()
+		setTimeout(() => {
+			setIsValid(false);
+		}, 5000);
+		clearTimeout();
 	};
 
 	return (
@@ -88,7 +92,9 @@ export default function ContactForm() {
 				/>
 
 				<button type='submit' disabled={!isEnabled}>
-					{isValid === 200
+					{isSending
+						? 'Sending...'
+						: isValid === 200
 						? 'Message sent! '
 						: isValid === 400
 						? 'Error'

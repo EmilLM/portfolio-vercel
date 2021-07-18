@@ -23,6 +23,7 @@ export default function ContactForm() {
 	};
 
 	const [isValid, setIsValid] = useState(false);
+	const [isSending, setIsSending] = useState(false);
 
 	const sendEmail = () => {
 		const templateParams = {
@@ -40,15 +41,17 @@ export default function ContactForm() {
 			.then(
 				(resp) => {
 					setIsValid(resp.status);
+					setIsSending(false);
 				},
 				(err) => {
 					setIsValid(err.status);
-					console.log(err)
+					setIsSending(false);
 				}
 			);
 	};
 
 	const handleSubmit = (e) => {
+		setIsSending(true);
 		e.preventDefault();
 		sendEmail();
 		setFormState({
@@ -101,7 +104,9 @@ export default function ContactForm() {
 					disabled={!isEnabled}
 					className={`btn ${theme ? btnDark : btnLight}`}
 				>
-					{isValid === 200
+					{isSending
+						? 'Sending...'
+						: isValid === 200
 						? 'Message sent! '
 						: isValid === 400
 						? 'Error'
