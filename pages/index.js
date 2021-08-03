@@ -20,20 +20,38 @@ const Home = () => {
 				</h2>
 				<div className={styles.accordion}>
 					<div className={`${styles.section} ${styles.glassmorphism}`}>
-						<Image alt='glassmorphism' src={glassImg} layout='fill' priority />
+						<Image
+							alt='glassmorphism'
+							src={glassImg}
+							layout='fill'
+							priority
+							placeholder='blur'
+						/>
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
 						</Link>
 					</div>
 					<div className={`${styles.waves} ${styles.section}`}>
-						<Image alt='waves design' src={wavesImg} layout='fill' priority />
+						<Image
+							alt='waves design'
+							src={wavesImg}
+							layout='fill'
+							priority
+							placeholder='blur'
+						/>
 
 						<Link href='/waves'>
 							<a className={styles.type}>Waves</a>
 						</Link>
 					</div>
 					<div className={`${styles.neumorphism} ${styles.section}`}>
-						<Image alt='neumorphism' src={neuImg} layout='fill' priority />
+						<Image
+							alt='neumorphism'
+							src={neuImg}
+							layout='fill'
+							priority
+							placeholder='blur'
+						/>
 
 						<Link href='/neumorphism'>
 							<a className={styles.type}>Neumorphism</a>

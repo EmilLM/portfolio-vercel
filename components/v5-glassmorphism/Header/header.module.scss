@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	
+
 	&:after {
 		position: absolute;
 		content: '';
@@ -19,6 +19,7 @@
 		top: 15%;
 		right: 3%;
 		z-index: 10;
+
 		@media screen and (min-width: 600px) {
 			top: 25%;
 			right: 8%;
@@ -79,7 +80,7 @@
 	margin: 2rem 0;
 	background: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.336);
-
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	backdrop-filter: blur(10px) contrast(110%) brightness(110%);
 	border-radius: 30px;
 	mix-blend-mode: overlay;
