@@ -25,7 +25,7 @@ const Home = () => {
 							src={glassImg}
 							layout='fill'
 							priority
-							placeholder='blur'
+							// placeholder='blur'
 						/>
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
@@ -37,7 +37,7 @@ const Home = () => {
 							src={wavesImg}
 							layout='fill'
 							priority
-							placeholder='blur'
+							// placeholder='blur'
 						/>
 
 						<Link href='/waves'>
@@ -50,7 +50,7 @@ const Home = () => {
 							src={neuImg}
 							layout='fill'
 							priority
-							placeholder='blur'
+							// placeholder='blur'
 						/>
 
 						<Link href='/neumorphism'>
