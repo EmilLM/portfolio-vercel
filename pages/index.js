@@ -6,6 +6,8 @@ import Image from 'next/image';
 import glassImg from '../public/assets/glassmorphism.webp';
 import neuImg from '../public/assets/neumorphism.webp';
 import wavesImg from '../public/assets/waves_about.webp';
+
+
 const Home = () => {
 	return (
 		<>
@@ -25,7 +27,7 @@ const Home = () => {
 							src={glassImg}
 							layout='fill'
 							priority
-							// placeholder='blur'
+							placeholder='blur'
 						/>
 						<Link href='/glassmorphism'>
 							<a className={styles.type}>Glassmorphism</a>
@@ -37,7 +39,7 @@ const Home = () => {
 							src={wavesImg}
 							layout='fill'
 							priority
-							// placeholder='blur'
+							placeholder='blur'
 						/>
 
 						<Link href='/waves'>
@@ -50,7 +52,7 @@ const Home = () => {
 							src={neuImg}
 							layout='fill'
 							priority
-							// placeholder='blur'
+							placeholder='blur'
 						/>
 
 						<Link href='/neumorphism'>
