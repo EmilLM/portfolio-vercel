@@ -57,6 +57,18 @@
         stack: 'React-Scss-Next.js',
         // class needed for styling the waves in various positions
         wavesClass: 'project1-waves'
+    },
+    {
+        id: 5,
+        src: 'cookbook.webp',
+        link: 'https://cookbook-blue.vercel.app',
+        sourceLink: 'https://github.com/EmilLM/AlaVero',
+        altText: "Cookbook site",
+        title: 'A la Vero',
+        description: "App for all of my family's recipes.",
+        stack: 'Next.js-Algolia-GraphQL-MongoDB',
+        // class needed for styling the waves in various positions
+        wavesClass: 'project2-waves'
     }
 ];
 
